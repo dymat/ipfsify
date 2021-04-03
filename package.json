@@ -1,0 +1,28 @@
+{
+  "name": "ipfsify",
+  "description": "An example of how to play a video in a browser using a readable stream",
+  "main": "index.js",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "webpack",
+    "start": "npm run build && http-server dist -a 127.0.0.1 -p 8888"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "http-server": "^0.12.3",
+    "node-polyfill-webpack-plugin": "^1.0.3",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "ipfs": "^0.53.2",
+    "it-to-buffer": "^2.0.0"
+  }
+}
