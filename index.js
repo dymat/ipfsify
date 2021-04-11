@@ -19,6 +19,9 @@ class Ipfsify {
     this.prevent_default_loading()
 
     this.ipfs = await Ipfs.create({ repo: 'ipfs-' + Math.random() })
+
+    // ipfsify all elements (you might want to change that to the desired tags)
+    this.all()
   }
 
 
@@ -90,4 +93,3 @@ class Ipfsify {
 
 // instatiate object and ipfsify all images with "ipfs"-attribute
 const ipfsify = new Ipfsify({})
-ipfsify.all()
