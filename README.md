@@ -1,1 +1,6 @@
 # ipfsify
+
+```
+$ npm install
+$ webpack
+```
