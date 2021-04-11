@@ -73,6 +73,4 @@ class Ipfsify {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const ipfsify = new Ipfsify({})
-})
+const ipfsify = new Ipfsify({})
